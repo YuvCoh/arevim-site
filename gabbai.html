@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0F5C4E" />
+    <meta
+      name="description"
+      content="ערבים — מדריך מהיר לגבאים: פתיחת קהילה, הזמנה, מניינים קבועים והתראות."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <title>ערבים — מדריך מהיר לגבאים</title>
+    <style>
+      :root {
+        --hdr: #0f5c4e;
+        --hdr-ink: #f3faf6;
+        --accent: #147a5b;
+        --ground: #f6f4ef;
+        --surface: #fff;
+        --ink: #1b2521;
+        --muted: #5b6a64;
+        --line: #e4e0d6;
+        --pill: #eaf5ef;
+
+        color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --hdr: #16241f;
+          --hdr-ink: #e3eee8;
+          --accent: #2bb98a;
+          --ground: #0e1613;
+          --surface: #15201c;
+          --ink: #e4ece8;
+          --muted: #8fa099;
+          --line: #23302b;
+          --pill: #1a2c25;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--ground);
+        color: var(--ink);
+        font:
+          16px/1.6 system-ui,
+          -apple-system,
+          'Segoe UI',
+          sans-serif;
+      }
+
+      header {
+        background: var(--hdr);
+        color: var(--hdr-ink);
+        padding: 20px 16px 18px;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      header p {
+        margin: 4px 0 0;
+        opacity: 0.85;
+      }
+
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 12px 16px 40px;
+      }
+
+      section {
+        background: var(--surface);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 14px 16px;
+        margin-block: 12px;
+      }
+
+      h2 {
+        margin: 0 0 6px;
+        font-size: 18px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      h2 .n {
+        display: inline-grid;
+        place-items: center;
+        inline-size: 28px;
+        block-size: 28px;
+        border-radius: 50%;
+        background: var(--pill);
+        color: var(--accent);
+        font-size: 15px;
+        flex: none;
+      }
+
+      p,
+      ul {
+        margin: 6px 0;
+      }
+
+      ul {
+        padding-inline-start: 20px;
+      }
+
+      b.ui {
+        background: var(--pill);
+        color: var(--accent);
+        border-radius: 6px;
+        padding: 0 6px;
+        font-weight: 600;
+        box-decoration-break: clone;
+      }
+
+      .muted {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      a.open {
+        display: block;
+        text-align: center;
+        margin-block-start: 18px;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 12px;
+        border-radius: 12px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        a.open {
+          color: #0b1511;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>מדריך מהיר לגבאים</h1>
+      <p>איך מקימים את הקהילה בערבים ומגיעים לעשרה — בחמש דקות.</p>
+    </header>
+    <main>
+      <section>
+        <h2><span class="n">1</span>מתקינים ונרשמים</h2>
+        <ul>
+          <li>
+            <b>אנדרואיד (Chrome):</b> פותחים את הקישור, תפריט ⋮ ← <b class="ui">התקנת האפליקציה</b>.
+          </li>
+          <li>
+            <b>אייפון (Safari):</b> כפתור השיתוף ← <b class="ui">הוספה למסך הבית</b>, ופותחים משם.
+            ככה גם מקבלים התראות.
+          </li>
+          <li>נרשמים עם Google או עם כתובת מייל, ובוחרים עיר — ממנה מחושבים זמני היום והשבת.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span class="n">2</span>פותחים קהילה</h2>
+        <p>
+          לשונית <b class="ui">קהילות</b> ← <b class="ui">פתיחת קהילה</b>. מי שפותח את הקהילה הוא
+          המנהל שלה.
+        </p>
+      </section>
+
+      <section>
+        <h2><span class="n">3</span>מזמינים את כולם</h2>
+        <p>
+          בתוך הקהילה: <b class="ui">הזמנה לקהילה</b> ← <b class="ui">יצירת קישור הזמנה</b> ←
+          <b class="ui">העתקת קישור</b>, ומדביקים בקבוצת הווטסאפ הקיימת של בית הכנסת.
+        </p>
+        <ul>
+          <li>
+            מי שמצטרף דרך הקישור מקבל את הערבות שלך ומאושר מיד — לכן שולחים אותו רק לאנשים שמכירים.
+          </li>
+          <li>הקישור תקף 7 ימים ול־20 הצטרפויות. אפשר לבטל אותו בכל רגע וליצור חדש.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span class="n">4</span>קובעים את המניינים הקבועים</h2>
+        <p>
+          בקהילה: <b class="ui">מניין</b> ← <b class="ui">הוספת מניין קבוע</b>. בוחרים תפילה, שעה
+          וימים, והאם המניין <b class="ui">ציבורי</b> (כל אחד בסביבה יכול למצוא אותו ולסמן ״אולי״)
+          או <b class="ui">לחברים בלבד</b>.
+        </p>
+        <p>המניינים נוצרים לבד לשבוע הקרוב, בכל יום שנבחר.</p>
+      </section>
+
+      <section>
+        <h2><span class="n">5</span>איך סופרים עד עשרה</h2>
+        <ul>
+          <li>
+            חברים מסמנים <b class="ui">אגיע</b>; כל אחד יכול לסמן <b class="ui">אולי</b> ולקבל
+            עדכונים.
+          </li>
+          <li>
+            רק גברים מאושרים נספרים לעשרה. מי שעוד לא אושר מופיע כמגיע ונכנס לספירה ברגע שמאשרים
+            אותו.
+          </li>
+          <li>
+            מי שמגיע כל יום מסמן <b class="ui">באופן קבוע</b> ונספר אוטומטית. ביום שלא יגיע — לוחץ
+            שוב על ״אגיע״ כדי לדלג.
+          </li>
+          <li>
+            כשחסרים אנשים: <b class="ui">קריאה למי שאמר אולי</b> — עד שתי קריאות למניין, ולא בשבת.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span class="n">6</span>מאשרים אנשים חדשים</h2>
+        <p>
+          לשונית <b class="ui">אנשים</b>: מי שסימן שהוא מכיר אותך מופיע שם. לוחצים
+          <b class="ui">אישור היכרות</b> רק למי שבאמת מכירים. עשרה אישורים מחברים מאושרים מאשרים
+          חשבון חדש.
+        </p>
+      </section>
+
+      <section>
+        <h2><span class="n">7</span>התראות</h2>
+        <ul>
+          <li>
+            לשונית <b class="ui">אני</b> ← <b class="ui">התראות לטלפון</b>: יש מניין, חסר אחד,
+            קריאות ותזכורות.
+          </li>
+          <li><b class="ui">תזכורת לפני מניין שסימנת ״אגיע״</b> — ברירת המחדל חצי שעה לפני.</li>
+          <li>בשבת ובחג אין הודעות ואין התראות. סיכום אחד נשלח אחרי ההבדלה.</li>
+          <li>בלי קליטה? ממשיכים לקרוא ולכתוב; מה שנכתב יישלח כשהחיבור יחזור.</li>
+        </ul>
+      </section>
+
+      <p class="muted">שאלות או תקלות — כתבו למי ששלח לך את הקישור לערבים.</p>
+      <a class="open" href="./">לפתיחת ערבים</a>
+    </main>
+  </body>
+</html>
