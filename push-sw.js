@@ -21,13 +21,18 @@ self.addEventListener('push', (event) => {
       icon: inApp('pwa-192x192.png'),
       badge: inApp('pwa-64x64.png'),
       data: { url: data.url || '/' },
+      // One-tap answers for "are you coming?" (T33).
+      actions: Array.isArray(data.actions) ? data.actions.slice(0, 3) : [],
     }),
   );
 });
 
 self.addEventListener('notificationclick', (event) => {
   event.notification.close();
-  const url = inApp((event.notification.data && event.notification.data.url) || '/');
+  let url = inApp((event.notification.data && event.notification.data.url) || '/');
+  // A tapped answer opens the app, which records it (the service worker has no sign-in).
+  if (event.action)
+    url += (url.includes('?') ? '&' : '?') + 'answer=' + encodeURIComponent(event.action);
   event.waitUntil(
     self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then((list) => {
       for (const c of list) {
