@@ -1,1 +1,0 @@
-import{m as e,o as t}from"./vendor-NcaOhCGw.js";var n=t();function r({items:t,label:r}){return(0,n.jsx)(`nav`,{className:`seg`,"aria-label":r,children:t.map(t=>(0,n.jsx)(e,{to:t.to,replace:!0,className:({isActive:e})=>e?`on`:``,children:t.label},t.to))})}export{r as t};

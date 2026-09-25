@@ -1,0 +1,1 @@
+function e(e){try{return window.localStorage.getItem(e)}catch{return null}}function t(e,t){try{window.localStorage.setItem(e,t)}catch{}}function n(e,t=window.location.origin,n=`/arevim-site/`){return`${t}${n.endsWith(`/`)?n:`${n}/`}${e.replace(/^\/+/,``)}`}export{e as n,t as r,n as t};
