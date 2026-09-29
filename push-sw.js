@@ -1,4 +1,4 @@
-/* Web Push for Arevim, imported into the generated service worker (vite.config.ts). */
+/* Web Push for Minyaner, imported into the generated service worker (vite.config.ts). */
 // App paths ('/c/…') resolve under the service worker's scope, so this works at the site root
 // and under a sub-path such as /arevim-site/.
 const inApp = (path) =>
@@ -13,7 +13,7 @@ self.addEventListener('push', (event) => {
   }
   const he = data.lang !== 'en';
   event.waitUntil(
-    self.registration.showNotification(data.title || (he ? 'ערבים' : 'Arevim'), {
+    self.registration.showNotification(data.title || (he ? 'מניינר' : 'Minyaner'), {
       body: data.body || '',
       tag: data.tag,
       lang: he ? 'he' : 'en',
