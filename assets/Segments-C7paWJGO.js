@@ -1,0 +1,1 @@
+import{c as e,h as t}from"./vendor-v9I6u5rB.js";var n=e();function r({items:e,label:r}){return(0,n.jsx)(`nav`,{className:`seg`,"aria-label":r,children:e.map(e=>(0,n.jsx)(t,{to:e.to,replace:!0,className:({isActive:e})=>e?`on`:``,children:e.label},e.to))})}export{r as t};
