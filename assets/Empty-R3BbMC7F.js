@@ -1,0 +1,1 @@
+import{s as e}from"./vendor-CoZ3Nazf.js";var t=e();function n({children:e}){return(0,t.jsx)(`div`,{className:`empty`,children:e})}export{n as t};

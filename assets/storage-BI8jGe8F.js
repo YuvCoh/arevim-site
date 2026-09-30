@@ -1,0 +1,1 @@
+function e(e,t=window.location.origin,n=`/`){return`${t}${n.endsWith(`/`)?n:`${n}/`}${e.replace(/^\/+/,``)}`}function t(e){try{return window.localStorage.getItem(e)}catch{return null}}function n(e,t){try{window.localStorage.setItem(e,t)}catch{}}export{n,e as r,t};
